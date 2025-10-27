@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #1B1B1B;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200vh;
+        color: #EAEAEA;
+    }
+    form{
+        background-color: #2C3E50;
+        padding: 20px;
+        border-radius: 10px;
+        width: 400px;
+    }
+
+    h1{
+        text-align: center;
+        color: #C9A227;
+    }
+    label{
+        display: block;
+        margin-top: 1px;
+        text-align: center;
+    }
+    input{
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #C9A227;
+        box-sizing: border-box;
+    }
+    select{
+        background-color: #C9A227;
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    .checkbox{
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .checkbox-grup label{
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+</style>
+<body>
+    <div>
+        <h1>Formulari</h1>
+        <form>
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required><br><br>
+
+            <label for="cognoms">Cognoms:</label>
+            <input type="text" id="cognom" name="cognom" required><br><br>
+
+            <label for="password">Contrasenya</label>
+            <input type="password"><br><br>
+
+            <label for="DNI">DNI</label>
+            <input type="text" id="dni" name="dni"  required pattern="[0-9]{8}[A-Z]{1,2}"><br><br>
+
+            <label for="correu"+>Correu Electronic</label>
+            <input type="email" id="correu" name="correu" pattern="[a-z0-9._%+-]+@example.com" required><br><br>
+
+            <label for="numero">Telefon</label>
+            <input type="tel" id="numero" name="numero" pattern="[0-9]{9}" required><br><br>
+
+            <label for="data">Data naixement</label>
+            <input type="date" required><br><br>
+
+            <div class="checkbox-grup">
+                <label for="coneixements">Coneixements</label><br>
+                <label><input type="checkbox">PYTHON</label>
+                <label><input type="checkbox">JAVA</label>
+                <label><input type="checkbox">HTML</label>
+                <label><input type="checkbox">CSS</label>
+            </div><br>
+
+            <label for="Genere">Genere</label> <br>
+            <input type="radio">Home
+            <input type="radio">Dona <br><br>
+
+            <label for="tematica">Tematica</label><br>
+            <select name="tematica" id="tematica">
+                <option value="politica">politica</option>
+                <option value="terror">terror</option>
+                <option value="musica">Musica</option>
+            </select><br><br>
+
+            <label for="text_area">Text</label><br>
+            <textarea name="text" id="text" maxlength="100" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit">
+            <input type="reset">
+
+        </form>
+    </div>
+</body>
+</html>

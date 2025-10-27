@@ -1,0 +1,56 @@
+h1
+{
+    color: green;
+}
+
+h2#subtitol
+{
+    color: red;
+}
+
+h2
+{
+    color: blue;
+}
+
+strong
+{
+    color: red;
+}
+.destacat
+{
+    color: orange;
+}
+a
+{
+    color:red
+}
+
+a#em
+{
+    color:blue
+}
+
+div#addicional p
+{
+    color: blue;
+}
+
+#especial
+{
+    color: purple;
+}
+
+#addicional a{
+    color: green;
+}
+
+table, th, td
+{
+    border:1px solid;
+}
+
+.especial
+{
+    color: rgb(132, 132, 31);
+}
