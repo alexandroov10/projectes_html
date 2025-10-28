@@ -38,15 +38,11 @@ h1
 {
     font-family: 'Counter strike', sans-serif;
     color: #de9b35;
-    font-size: 48px;
+    font-size: 170px;
     text-align: center;
+    margin-top: 250px;
 }
-img
-{
-    width: 690px;
-    height: 400px;
-    align-self: center;
-}
+
 p
 {
     font-family: 'Counter strike', sans-serif;
@@ -62,8 +58,61 @@ h2
     font-size: 36px;
     text-align: center;
 }
-.video{
+.fons {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    top: 0px;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+/* Index */
+body.index{
+    display: flex;
+    justify-content: center;
+}
+
+body.index .menu-index{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    gap: 20px;
+}
+
+body.index .boto-mapa{
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #ff9800;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+body.index .menu-index li a:hover{
+    background-color: #de9b35;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px black;
+}
+
+
+/* Mapas */
+body.mapas h1{
+    font-size: 100px;
+    margin-top: 30px;
+}
+
+/* Historia */
+body.hisotria h1{
+    font-size: 100px;
+    margin-top: 30px;
+}
+
+/* Armas */
+body.armas h1{
+    font-size: 100px;
+    margin-top: 30px;
 }
