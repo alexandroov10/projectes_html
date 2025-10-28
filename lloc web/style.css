@@ -59,7 +59,7 @@ h2
     text-align: center;
 }
 .fons {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -70,34 +70,54 @@ h2
 /* Index */
 body.index{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10vh;
+    text-align: center;
 }
 
 body.index .menu-index{
     list-style: none;
     display: flex;
-    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    margin: 80px auto 0;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background: transparent;
+}
+
+body.index .menu-index li{
     margin: 0;
-    flex-direction: column;
-    gap: 20px;
+    width: 500px;
 }
 
-body.index .boto-mapa{
-    display: inline-block;
-    padding: 15px 40px;
-    background-color: #ff9800;
-    color: black;
+body.index .menu-index li a{
+    display: block;
+    padding: 28px 20px;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
+    background: none !important;
 }
 
-body.index .menu-index li a:hover{
-    background-color: #de9b35;
-    transform: scale(1.05);
-    box-shadow: 0 0 10px black;
+body.index li a.boto-mapa{
+    background: #de9b35 !important;
+    font-family: 'Counter Strike', sans-serif;
+    font-size: 25px;
 }
-
+body.index li a.boto-historia{
+    background: #de9b35 !important;
+    font-family: 'Counter Strike', sans-serif;
+    font-size: 25px;
+}
+body.index li a.boto-armas{
+    background: #de9b35 !important;
+    font-family: 'Counter Strike', sans-serif;
+    font-size: 25px;
+}
 
 /* Mapas */
 body.mapas h1{
