@@ -2,6 +2,10 @@
     font-family: 'Counter strike';
     src: url('font/cs_regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Valorant';
+    src: url('font/Valorant\ Font.ttf') format('truetype');
+}
 body
 {
     margin: 0;
@@ -15,7 +19,8 @@ ul
     position: fixed;
     top: 0;
     overflow: hidden;
-    background-color: #de9b35;
+    background-color: #FF4655;
+    font-family: 'Valorant', sans-serif;
     border-radius: 3px;
 }
 li
@@ -32,12 +37,14 @@ li a
 }
 li a:hover
 {
-    background-color: #d7d751;
+    background-color: #FF4655;
+    color: #0F1923;
+    transform: scale(1.05);
 }
 h1
 {
-    font-family: 'Counter strike', sans-serif;
-    color: #de9b35;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
     font-size: 170px;
     text-align: center;
     margin-top: 250px;
@@ -45,8 +52,8 @@ h1
 
 p
 {
-    font-family: 'Counter strike', sans-serif;
-    color: #de9b35;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
     font-size: 27px;
     text-align: justify;
     margin: 15px;
@@ -54,7 +61,7 @@ p
 h2
 {
     font-family: 'Counter strike', sans-serif;
-    color: #de9b35;
+    color: #FF4655;
     font-size: 36px;
     text-align: center;
 }
@@ -67,13 +74,16 @@ h2
     object-fit: cover;
     z-index: -1;
 }
+
+
+
 /* Index */
 body.index{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 10vh;
+    padding-top: 0vh;
     text-align: center;
 }
 
@@ -104,35 +114,537 @@ body.index .menu-index li a{
 }
 
 body.index li a.boto-mapa{
-    background: #de9b35 !important;
-    font-family: 'Counter Strike', sans-serif;
+    background: #FF4655 !important;
+    font-family: 'Valorant', sans-serif;
     font-size: 25px;
 }
 body.index li a.boto-historia{
-    background: #de9b35 !important;
-    font-family: 'Counter Strike', sans-serif;
+    background: #FF4655 !important;
+    font-family: 'Valorant', sans-serif;
     font-size: 25px;
 }
 body.index li a.boto-armas{
-    background: #de9b35 !important;
-    font-family: 'Counter Strike', sans-serif;
+    background: #FF4655 !important;
+    font-family: 'Valorant', sans-serif;
     font-size: 25px;
 }
 
+
+
 /* Mapas */
+
+body{
+    background-color: #0F1923;
+}
+
 body.mapas h1{
     font-size: 100px;
     margin-top: 30px;
 }
+body.mapas .bind-contenidor,
+body.mapas .split-contenidor,
+body.mapas .lotus-contenidor,
+body.mapas .abyss-contenidor,
+body.mapas .heaven-contenidor,
+body.mapas .breeze-contenidor
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
 
-/* Historia */
-body.hisotria h1{
+body.mapas .text-bind{
+    flex: 1;
+}
+body.mapas .text-bind h3{
+    font-size: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+}
+body.mapas .text-bind p{
+    font-size: 25px;
+    color: white;
+}
+
+body.mapas .bind-contenidor img.bind{
+    width: 530px;
+    border-radius: 10px;;
+}
+
+body.mapas .ascent-contenidor
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: row-reverse;
+}
+
+body.mapas .text-ascent{
+    flex: 1;
+}
+body.mapas .text-ascent h3{
+    font-size: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+}
+body.mapas .text-ascent p{
+    font-size: 25px;
+    color: white;
+}
+body.mapas .ascent-contenidor img.ascent{
+    width: 530px;
+    border-radius: 10px;;
+}
+
+body.mapas .text-split{
+    flex: 1;
+}
+body.mapas .text-split h3{
+    font-size: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+}
+body.mapas .text-split p{
+    font-size: 25px;
+    color: white;
+}
+body.mapas .split-contenidor img.split{
+    width: 530px;
+    border-radius: 10px;;
+}
+
+body.mapas .icebox-contenidor{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+body.mapas .text-icebox{
+    flex: 1;
+    max-width: 65%;
+}
+body.mapas .text-icebox h3{
+    font-size: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+}
+body.mapas .text-icebox p{
+    font-size: 25px;
+    color: white;
+}
+body.mapas .icebox-contenidor img.icebox{
+    width: 35%;
+    border-radius: 10px;
+}
+
+body.mapas .text-lotus{
+    flex: 1;
+    max-width: 65%;
+}
+body.mapas .text-lotus h3{
+    font-size: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+}
+body.mapas .text-lotus p{
+    font-size: 25px;
+    color: white;
+}
+body.mapas .lotus-contenidor img.lotus{
+    width: 35%;
+    border-radius: 10px;;
+}
+
+body.mapas .sunset-contenidor{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+}
+body.mapas .text-sunset{
+    flex: 1;
+    max-width: 65%;
+}
+body.mapas .text-sunset h3{
+    font-size: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+}
+body.mapas .text-sunset p{
+    font-size: 25px;
+    color: white;
+}
+body.mapas .sunset-contenidor img.sunset{
+    width: 35%;
+    border-radius: 10px;
+}
+
+body.mapas .text-abyss{
+    flex: 1;
+    max-width: 65%;
+}
+body.mapas .text-abyss h3{
+    font-size: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+}
+body.mapas .text-abyss p{
+    font-size: 25px;
+    color: white;
+}
+body.mapas .abyss-contenidor img.abyss{
+    width: 35%;
+    border-radius: 10px;
+}
+
+body.mapas .fracture-contenidor{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+}
+body.mapas .text-fracture{
+    flex: 1;
+    max-width: 65%;
+}
+body.mapas .text-fracture h3{
+    font-size: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+}
+body.mapas .text-fracture p{
+    font-size: 25px;
+    color: white;
+}
+body.mapas .fracture-contenidor img.fracture{
+    width: 35%;
+    border-radius: 10px;
+}
+
+body.mapas .text-heaven{
+    flex: 1;
+    max-width: 65%;
+}
+body.mapas .text-heaven h3{
+    font-size: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+}
+body.mapas .text-heaven p{
+    font-size: 25px;
+    color: white;
+}
+body.mapas .heaven-contenidor img.heaven{
+    width: 35%;
+    border-radius: 10px;
+}
+
+body.mapas .pearl-contenidor{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+}
+body.mapas .text-pearl{
+    flex: 1;
+    max-width: 65%;
+}
+body.mapas .text-pearl h3{
+    font-size: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+}
+body.mapas .text-pearl p{
+    font-size: 25px;
+    color: white;
+}
+body.mapas .pearl-contenidor img.pearl{
+    width: 35%;
+    border-radius: 10px;
+}
+
+body.mapas .text-breeze{
+    flex: 1;
+    max-width: 65%;
+}
+body.mapas .text-breeze h3{
+    font-size: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+}
+body.mapas .text-breeze p{
+    font-size: 25px;
+    color: white;
+}
+body.mapas .breeze-contenidor img.breeze{
+    width: 35%;
+    border-radius: 10px;
+}
+
+body.mapas .corrode-contenidor{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+}
+body.mapas .text-corrode{
+    flex: 1;
+    max-width: 65%;
+}
+body.mapas .text-corrode h3{
+    font-size: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+}
+body.mapas .text-corrode p{
+    font-size: 25px;
+    color: white;
+}
+body.mapas .corrode-contenidor img.corrode{
+    width: 35%;
+    border-radius: 10px;
+}
+
+
+
+/* PERSONATGES */
+body.personatges h1{
     font-size: 100px;
     margin-top: 30px;
 }
+body.personatges h3{
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+}
+
+body.personatges .duelistas-contenidor,
+body.personatges .iniciadors-contenidor,
+body.personatges .centinelas-contenidor,
+body.personatges .controladors-contenidor
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #0F1923;
+}
+
+
+body.personatges .duelistas-grid,
+body.personatges .iniciador-grid,
+body.personatges .centinela-grid,
+body.personatges .controlador-grid
+{
+    background-color: #1C2A36;
+    position: relative;
+    border-radius: 10px;
+    height: 420px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+    font-size: 20px;
+}
+
+body.personatges img{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-radius: 10px 10px 0 0;
+}
+body.personatges .duelistas-grid h4,
+body.personatges .iniciador-grid h4,
+body.personatges .centinela-grid h4,
+body.personatges .controlador-grid h4
+{
+    position: absolute;
+    bottom: 10px;
+    font-size: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+body.personatges .duelistas-grid:hover,
+body.personatges .iniciador-grid:hover,
+body.personatges .centinela-grid:hover,
+body.personatges .controlador-grid:hover
+{
+    transform: scale(1.05);
+}
+
+
 
 /* Armas */
 body.armas h1{
     font-size: 100px;
     margin-top: 30px;
+}
+body.armas .pistoles-contenidor,
+body.armas .subfusil-contenidor,
+body.armas .escopetes-contenidor,
+body.armas .fusils-contenidor,
+body.armas .snipers-contenidor,
+body.armas .armes-pesades-contenidor
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #0F1923;
+}
+
+body.armas h3{
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+}
+
+body.armas .pistoles-grid{
+    background-color: #1C2A36;
+    border-radius: 10px;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+    font-size: 20px;
+}
+
+body.armas .pistoles-grid:hover,
+body.armas .subfusil-grid:hover,
+body.armas .escopetes-grid:hover,
+body.armas .fusils-grid:hover,
+body.armas .snipers-grid:hover,
+body.armas .armes-pesades-grid:hover
+{
+    background-color: #FF4655;
+    color: #0F1923;
+    transform: scale(1.05);
+}
+
+body.armas .subfusil-grid{
+    background-color: #1C2A36;
+    border-radius: 10px;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+    font-size: 20px;
+}
+
+body.armas .escopetes-grid{
+    background-color: #1C2A36;
+    border-radius: 10px;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+    font-size: 20px;
+}
+
+body.armas .fusils-grid{
+    background-color: #1C2A36;
+    border-radius: 10px;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+    font-size: 20px;
+}
+
+body.armas .snipers-grid{
+    background-color: #1C2A36;
+    border-radius: 10px;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+    font-size: 20px;
+}
+body.armas .armes-pesades-grid{
+    background-color: #1C2A36;
+    border-radius: 10px;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Valorant', sans-serif;
+    color: #FF4655;
+    font-size: 20px;
 }
